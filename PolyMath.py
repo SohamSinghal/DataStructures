@@ -35,7 +35,7 @@ class Polynomial:
       while temp2 is not None:
         sum.append([temp2.coeff,temp2.pow])
         temp2 = temp2.next
-    else:
+    elif temp1 is not None and temp2 is None:
       while temp1 is not None:
         sum.append([temp1.coeff,temp1.pow])
         temp1 = temp1.next
